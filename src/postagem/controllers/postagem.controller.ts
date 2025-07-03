@@ -10,7 +10,7 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
-import { postagem } from '../entities/postagem.entity';
+import { Postagem } from '../entities/postagem.entity';
 import { PostagemService } from '../services/postagem.service';
 
 @Controller('/postagens')
@@ -19,31 +19,31 @@ export class PostagemController {
 
   @Get()
   @HttpCode(HttpStatus.OK)
-  findAll(): Promise<postagem[]> {
+  findAll(): Promise<Postagem[]> {
     return this.postagemService.findAll();
   }
 
   @Get('/:id')
   @HttpCode(HttpStatus.OK)
-  findByID(@Param('id', ParseIntPipe) id: number): Promise<postagem> {
+  findByID(@Param('id', ParseIntPipe) id: number): Promise<Postagem> {
     return this.postagemService.findByID(id);
   }
 
   @Get('/titulo/:titulo')
   @HttpCode(HttpStatus.OK)
-  findByAllTitulo(@Param('titulo') titulo: string): Promise<postagem[]> {
+  findByAllTitulo(@Param('titulo') titulo: string): Promise<Postagem[]> {
     return this.postagemService.findAllByTitulo(titulo);
   }
 
   @Post()
   @HttpCode(HttpStatus.CREATED)
-  created(@Body() postagem: postagem): Promise<postagem> {
+  created(@Body() postagem: Postagem): Promise<Postagem> {
     return this.postagemService.create(postagem);
   }
 
   @Put()
   @HttpCode(HttpStatus.OK)
-  Update(@Body() postagem: postagem): Promise<postagem> {
+  Update(@Body() postagem: Postagem): Promise<Postagem> {
     return this.postagemService.Update(postagem);
   }
 
