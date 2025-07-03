@@ -36,6 +36,7 @@ export class PostagemService {
       },
       relations: {
         tema: true,
+        usuario: true,
       },
     });
   }
