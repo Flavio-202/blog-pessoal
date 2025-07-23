@@ -43,7 +43,7 @@ O projeto segue uma **arquitetura modular** do NestJS:
 Após rodar o projeto, acesse a documentação interativa:
 http://localhost:4000/swagger
 
-yaml
+
 Copiar
 Editar
 
@@ -54,7 +54,7 @@ Editar
 ### Pré-requisitos
 - Node.js (v18 ou superior recomendado)
 - MySQL instalado e rodando
-- npm ou yarn
+- npm
 - [Insomnia](https://insomnia.rest/) (opcional, para testar)
 
 ### Passos
