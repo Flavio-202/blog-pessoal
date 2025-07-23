@@ -40,12 +40,8 @@ O projeto segue uma **arquitetura modular** do NestJS:
 ---
 
 ## 📄 **Documentação da API**
-Após rodar o projeto, acesse a documentação interativa:
+Após rodar o projeto, acesse a documentação interativa nesse link 👉:
 http://localhost:4000/swagger
-
-
-Copiar
-Editar
 
 ---
 
@@ -56,25 +52,21 @@ Editar
 - MySQL instalado e rodando
 - npm
 - [Insomnia](https://insomnia.rest/) (opcional, para testar)
+  
 
-### Passos
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+### Passos para instalar:
+Apos abrir o terminal, digite o seguinte comando para clonar o repositório:
+git clone https://github.com/Flavio-202/blog-pessoal.git
+
 Instale as dependências:
-
-bash
-Copiar
-Editar
 npm install
-Configure o banco de dados:
 
-Crie um banco de dados MySQL (ex.: db_blogpessoal)
+
+Configure o banco de dados:
+Crie um banco de dados MySQL chamado: db_blogpessoal
 
 Crie ou ajuste o arquivo .env com as credenciais do banco:
 
-bash
-Copiar
 Editar
 DB_HOST=localhost
 DB_PORT=3306
