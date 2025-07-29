@@ -6,6 +6,7 @@ import { AppController } from './app.controller';
 import { ConfigModule } from '@nestjs/config';
 import { Module } from '@nestjs/common';
 import { DevService } from './data/services/services/dev.service';
+import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { DevService } from './data/services/services/dev.service';
     PostagemModule,
     TemaModule,
     AuthModule,
+    UsuarioModule,
   ],
   controllers: [AppController],
   providers: [],
