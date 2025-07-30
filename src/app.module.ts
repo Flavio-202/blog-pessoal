@@ -5,7 +5,7 @@ import { AuthModule } from './auth/auth.module';
 import { AppController } from './app.controller';
 import { ConfigModule } from '@nestjs/config';
 import { Module } from '@nestjs/common';
-import { DevService } from './data/services/services/dev.service';
+import { ProdService } from './data/services/services/prod.service'; 
 import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
@@ -13,7 +13,7 @@ import { UsuarioModule } from './usuario/usuario.module';
     ConfigModule.forRoot(),
     TypeOrmModule.forRootAsync({
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      useClass: DevService,
+      useClass: ProdService,
       imports: [ConfigModule],
     }),
     PostagemModule,
